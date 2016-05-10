@@ -1,0 +1,97 @@
+/*
+* @Author: laiha
+* @Date:   2016-04-06 10:39:50
+* @Last Modified by:   laihaibo
+* @Last Modified time: 2016-05-09 20:07:57
+*/
+* { margin: 0; padding: 0; }
+body { min-width: 1280px; margin: 0 auto; font-size: 14px; font-family: "Microsoft Yahei"; text-align: center; }
+ul { list-style: none; }
+li { float: left; }
+a { text-decoration: none; color: black; }
+textarea { resize: none }
+select { appearance: none; -moz-appearance: none; -webkit-appearance: none; }
+#submit { cursor: pointer; }
+header { height: 56px; padding: 0 59px  0 59px; }
+header > a { float: left; font-size: 1.5em; margin-top: 13px; }
+header > a span { margin-left: 10px; display: inline-block; height: 31px; line-height: 31px; overflow: hidden; }
+header nav { float: right; margin-top: 16px; display: inline-block; }
+header nav a { width: 65px; margin: 0 10px 0 10px; padding-bottom: 15px; font-size: 15px }
+.active, header nav a:hover { color: #e74f4d; border-bottom: 4px solid #e74f4d; }
+#login span { color: #e74f4d; vertical-align: top; overflow: hidden; }
+#s1 { background-image: url("../img/task7/show.png"); background-size: 100% auto; background-repeat: no-repeat; height: 730px; color: white; }
+#s1 h2 { font-size: 60px; line-height: 0.45; position: absolute; left: 116px; top: 271px; }
+#s1 p { font-size: 21px; line-height: 1.5; position: absolute; left: 124px; top: 328px; }
+#s1 a { font-size: 30px; color: white; background-color: #e74f4d; display: block; width: 331px; height: 65px; line-height: 65px; position: absolute; left: 126px; top: 429px; }
+#s2 { height: 205px; }
+#s2 li { width: 320px; margin-top: 45px; }
+#s2 p { margin-top: 30px; color: black; line-height: 1.286; border-right: 2px solid black; }
+#s2 li:last-of-type p { border: none; }
+#s3 { height: 361px; background-color: #edecec; }
+#s3 img { margin-top: 90px; }
+#s3 h2 { font-size: 53.586px; font-family: "SimHei"; color: #a1a1a1; line-height: 1.056; margin-top: 50px; }
+#s4 { height: 260px; background-image: url("../img/task7/map.png"); background-size: 100% auto; background-repeat: no-repeat; padding-top: 50px; }
+#s4 hr { width: 31px; align: center; margin: 10px auto; border: 1px solid white; }
+#s4 h3 { font-size: 21px; line-height: 1.8; color: white; }
+#s4 p { font-size: 12px; line-height: 2.6; color: white; }
+#s4 ul { margin-left: 160px; margin-top: 40px; }
+#s4 li { margin: 0 14px; width: 237px; height: 36px; }
+#s4 select { width: 237px; height: 36px; background-color: white; background: url("../img/task7/jtou.png") no-repeat scroll right center transparent; padding-right: 18px; font-family: "Microsoft Yahei"; font-size: 12px; padding-left: 11px; color: gray; }
+#s4 option { display: inline-block; color: black; background-color: #e3e2e4; height: 27px; }
+#s4 input { border: 0; outline: none; width: 237px; height: 36px; background-color: #e74f4d; font-family: "Microsoft Yahei"; font-size: 14px; color: white; }
+#s5 { height: 550px; background-color: #edecec; padding-left: 129px; }
+#s5 li { margin: 55px 18px 0; }
+#s5 img { width: 220px; height: 338px; background-color: white; padding: 13px 9.5px; }
+#s5 h3 { line-height: 1.8em; }
+#s5 li:hover { }
+#s6 { height: 567px; }
+#s6 .left { float: left; width: 66.6%; color: white; background-image: url("../img/task7/7wrs.png"); background-size: 100%; background-repeat: no-repeat; height: 567px; }
+#s6 .left h2 { font-size: 160px; }
+#s6 .left h3 { font-size: 50px; margin-top: 120px; }
+#s6 .left p { font-size: 22px; }
+#s6 .right { float: right; width: 33.4%; }
+#s6 .right h3 { margin-top: 170px; line-height: 1.8em; font-size: 1.5em; }
+#s6 .right h3 span { color: #e74f4d; }
+#s6 .right p { margin: 10px 70px; line-height: 2.5; font-size: 12px; }
+#s6 .right a { line-height: 31px; display: inline-block; height: 31px; width: 103px; border: 1px solid #e74f4d; overflow: hidden; }
+#s6 .right a:hover { background-color: #e74f4d; color: white; }
+#s6 .right img { margin-top: 33px; }
+#s7 { height: 521px; font-size: 21px; }
+#s7 hr { width: 31px; align: center; margin: 20px auto; }
+#s7 .left { float: left; width: 33.3%; background-color: #e74f4d; color: white; height: 521px; }
+#s7 .left hr { border: 1px solid white; }
+#s7 h3 { margin-top: 200px; }
+#s7 .left a { width: 170px; height: 44px; line-height: 44px; display: inline-block; border: 1px solid white; color: white; }
+#s7 .left a:hover { background-color: white; color: #e74f4d; }
+#s7 .middle { float: left; width: 33.3%; }
+#s7 .middle hr { border: 1px solid gray; }
+#s7 .middle a { width: 170px; height: 44px; line-height: 44px; display: inline-block; border: 1px solid #e74f4d; color: #e74f4d; }
+#s7 .middle a:hover { background-color: #e74f4d; color: white; }
+#s7 .right { float: left; width: 33.4%; background-image: url("../img/task7/8wls.png"); background-repeat: no-repeat; height: 521px }
+#s8 hr { width: 31px; align: center; margin: 10px auto 15px; border: 1px solid #e74f4d; }
+#s8 h3 { margin-top: 100px; font-size: 21px; line-height: 1.5; }
+#s8 p { font-size: 12px; line-height: 1.5; }
+#s8 p:hover { color: #e74f4d; }
+#s8 #join { margin-top: 80px; }
+#s8 .left { float: left; margin-left: 138px; width: 300px; }
+#s8 #join ul { text-align: left; }
+#s8 #join ul li { float: none; height: 95px; margin-bottom: 18px; }
+#s8 h4 { margin-bottom: 18px; font-size: 21px; }
+#s8 #join ul a { display: block; text-align: right; }
+#s8 .right { float: right; margin-right: 138px; width: 640px; }
+#s8 form { width: 100%; color: #231815; display: block; text-align: left; }
+#s8 .input { display: inline-block; width: 280px; height: 21px; margin: 0 0 13px 0; background-color: #ededee; border: 0; padding: 10px; }
+#s8 .input_left { margin-right: 35px; }
+#s8 form textarea { width: 620px; margin-bottom: 13px; background-color: #ededee; border: 0; padding: 10px; }
+#S8 input:last-of-type { width: 100%; border: 0; height: 41px; background-color: #ededee; margin-bottom: 13px; }
+#s9 { clear: both; height: 271px; background-color: #32363e; color: white; padding-top: 90px; }
+#s9 h3 { font-size: 21px; line-height: 2.303; }
+#s9 p { font-size: 12px; line-height: 1.5; }
+#s9 form { margin-top: 10px; }
+#s9 #email { width: 431px; height: 41px; }
+#s9 #submit { border: 0; display: inline-block; width: 85px; height: 45px; background-color: #6f7278; color: white; vertical-align: middle; line-height: 41px; margin-left: -5px; margin-top: -1px; }
+#s9 div { margin-top: 10px; }
+#s9 div img { margin: 10px; }
+footer { height: 59px; line-height: 59px; background-color: #2f2f38; color: white; padding: 0 100px 0 100px; }
+footer p { float: left; }
+footer a { float: right; color: white; }
