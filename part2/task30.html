@@ -3,7 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>task30</title>
+        <style type="text/css">
+        body{font-size: 14px;font-family:'Microsoft Yahei' ;}
+        label{display: inline-block;width: 300px;text-align: right;}
+        input{float: right;margin-left: 20px;width: 200px;margin-bottom: 2.5em;}
+        #btn{width: 50px;float: right;}
+        p{margin-left:100px;font-size: 0.8em;color: gray;line-height: 0.8em;}
+        .hide{display: none;}
+        </style>
+        <script type="text/javascript" src="task30.js"></script>
     </head>
     <body>
+      <fieldset>
+        <legend>验证</legend>
+        <label>用户名<input type="text" name="" value="" id="nickname"></label><br>
+        <p id="nameinfo" class="hide">必填，长度4~~16位中英文数字</p>
+        <label>密码<input type="text" name="" value="" id="password"></label><br>
+        <p id="pwinfo" class="hide">必填，请输入8位以上密码</p>
+        <label>确认密码<input type="text" name="" value="" id="repassword"></label><br>
+        <p id="repwinfo" class="hide">必填，再次输入相同的密码</p>
+        <label>邮箱<input type="text" name="" value="" id="email"></label><br>
+        <p id="emailinfo" class="hide">必填，请输入常用的email地址</p>
+        <label>手机<input type="text" name="" value="" id="mobile"></label><br>
+        <p id="mobileinfo" class="hide">请输入您的手机号码</p>
+        <label><button type="" id="btn">验证</button></label>
+      </fieldset>
     </body>
 </html>

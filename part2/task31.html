@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>IFE JavaScript Task 01</title>
+        <title>task31</title>
 
         <style>
             body {
@@ -64,12 +64,13 @@
             }
 
         </style>
+        <script type="text/javascript" src="task31_2.js"></script>
     </head>
 
     <body>
 
         <div id="form-container">
-            <div id="radio-select" onchange="radioChange()">
+            <div id="radio-select">
                 <div class="radio">
                     <label>
                         <input type="radio" name="optionsRadios" id="inSchoolRadio" checked> 在校生
@@ -84,12 +85,13 @@
             </div>
 
             <div id="select-container">
-                <div class="inSchool">
+                <div class="inSchool" id="inSchool">
                     <span>学校</span>
-                    <select class="select" id="select1" onchange="selectDistrict()">
+                    <select class="select" id="select1">
                         <option value="bj">北京</option>
                         <option value="sh">上海</option>
-                        <option value="hz">杭州</option>
+                        <option value="zj">浙江</option>
+                        <option value="sg">新加坡</option>
                     </select>
 
                     <select class="select" id="select2">
@@ -99,13 +101,11 @@
                     </select>
                 </div>
 
-                <div class="outSchool hide">
+                <div class="outSchool hide" id="outSchool">
                     <span>就业单位</span>
                     <input type="text" class="input">
                 </div>
             </div>
         </div>
-
-        <script src="task.js"></script>
     </body>
 </html>

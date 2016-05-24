@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>task29</title>
+	<style type="text/css">
+
+	</style>
 	<script>
 		window.onload=function(){
 			var content = document.getElementById('content');
@@ -10,14 +13,17 @@
 			var info = document.getElementById('info');
 
 			function validate(){
-				var con = content.value;
-				var lens = countlen(con);
+				var fuck = content.value.trim();
+				var lens = countlen(fuck);
 				if (lens==0) {
 					info.innerHTML = '姓名不能为空';
+					info.style.color = 'red';
 				}else if (lens<=16 && lens>=4) {
-					info.innerHTML = '名称格式正确'
+					info.innerHTML = '名称格式正确';
+					info.style.color = 'green';
 				}else{
 					info.innerHTML = '长度必须为4~16个字符';
+					info.style.color = 'orange';
 				}
 			}
 
@@ -34,19 +40,22 @@
 				return len;
 			}
 
-			btn.addEventListener('click', validate);
+			btn.addEventListener('click', validate,false);
+			// btn.onclick=function(){
+			// 	validate();
+			// }
 	}
 
 	</script>
 </head>
 <body>
 	<div id="container">
-		<form action="">
+		<fieldset>
 			<label>名称</label>
-			<input type="text" id="content" />
+			<input type="text" id="content">
 			<input type="submit" value="验证" id="btn">
 			<p id="info">必填，长度为4~16个字符</p>
-		</form>	
+		</fieldset>
 	</div>
 </body>
 </html>
