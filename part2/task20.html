@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>task19</title>
+  <title>task20</title>
   <style>
     *{margin: 0;padding: 0;}
+    textarea{height: 100px;width:200px;vertical-align: bottom;}
     input{height: 40px;}
-    body{font-size: 14px;font-family: 'Microsoft Yahei';}
+    body{font-size: 14px;font-family: 'Microsoft Yahei';-moz-hyphens: auto;-ms-hyphens: auto;-webkit-hyphens: auto;hyphens: auto;}
     #container{width:80%;margin:50px auto 0;height: 50px;}
     #list{margin:100px 0 0;height: 108px;width: 730px;vertical-align:bottom;padding: 0 auto;}
     #contral{display: inline-block;}
     button{cursor: pointer;-webkit-appearance:none;height:40px;width:40px;border-radius: 5px;border:none;}
-    a{text-align: center;text-decoration: none;display: inline-block;background-color:red;height: 40px;margin:3px;line-height:40px;padding:0 10px;text-align: center;}
+    a{text-align: center;text-decoration: none;display: inline-block;background-color:yellow;height: 40px;margin:3px;line-height:40px;padding:0 10px;text-align: center;}
 
   </style>
   <script type="text/javascript" src="task20.js"></script>
@@ -19,13 +20,13 @@
 <body>
   <div id="container">
     <div id="contral">
-      <input type="text" id="type-in">
+      <textarea id="type_in" autofocus></textarea>
       <button id="left-in" value='unshift' calss="btn">左侧入</button>
       <button id="right-in" value='push' calss="btn">右侧入</button>
       <button id="left-out" value='shift' calss="btn">左侧出</button>
       <button id="right-out" value='pop' calss="btn">右侧出</button>
     </div>
-      <button id="sort">排序</button>
+      <input type="text" id="search_text">
       <button id="search">查询</button>
     <div id="list"></div>
   </div>

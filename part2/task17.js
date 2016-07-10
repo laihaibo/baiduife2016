@@ -56,11 +56,12 @@ window.onload = function() {
   };
 
   // 用于渲染图表的数据
+  var colors=['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'];
   var chartData = {};
 
   // 记录当前页面的表单选项
   var pageState = {
-    nowSelectCity: 0,
+    nowSelectCity: -1,
     nowGraTime: 'day'
   }
   /**

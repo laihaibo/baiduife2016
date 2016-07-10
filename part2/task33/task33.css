@@ -2,12 +2,69 @@
 * @Author: laihaibo
 * @Date:   2016-05-24 13:26:10
 * @Last Modified by:   laihaibo
-* @Last Modified time: 2016-05-24 13:27:56
+* @Last Modified time: 2016-06-10 00:19:52
 */
-* { margin: 0; padding: 0; }
-body { font-family: 'Microsoft Yahei'; font-size: 14px; }
-#checkerboard { width: 440px; height: 440px; background: yellowgreen; background-image: linear-gradient(90deg, rebeccapurple 1px, transparent 0), linear-gradient(rebeccapurple 1px, transparent 0); background-size: 40px 40px; margin: 2vh auto; position: relative; border: 2px solid black; border-left: 1px solid black; border-top: 1px solid black; }
-#square { width: 40px; height: 40px; background: aqua; position: absolute; top: 200px; left: 200px; }
-#direction { width: 40px; height: 10px; background: salmon; }
-#control { width: 440px; margin: 0 auto; }
-button { padding: .3em .8em; border: 1px solid rgba(0, 0, 0, .1); background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent); border-radius: .2em; box-shadow: 0 .05em .25em rgba(0, 0, 0, .5); color: white; text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5); font-size: 100%; line-height: 1.5; cursor: pointer; }
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+}
+#checkerboard
+{
+    position: relative;
+
+    width: 440px;
+    height: 440px;
+    margin: 2vh auto;
+
+    border: 2px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    background: yellowgreen;
+    background-image: linear-gradient(90deg, rebeccapurple 1px, transparent 0), linear-gradient(rebeccapurple 1px, transparent 0);
+    background-size: 40px 40px;
+}
+#square
+{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+    width: 40px;
+    height: 40px;
+
+    background: aqua;
+}
+#direction
+{
+    width: 40px;
+    height: 10px;
+
+    background: salmon;
+}
+#control
+{
+    width: 440px;
+    margin: 0 auto;
+}
+button
+{
+    font-size: 100%;
+    line-height: 1.5;
+
+    padding: .3em .8em;
+
+    cursor: pointer;
+
+    color: white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .2em;
+    background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+}

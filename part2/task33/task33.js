@@ -2,7 +2,7 @@
  * @Author: laihaibo
  * @Date:   2016-05-24 11:17:00
  * @Last Modified by:   laihaibo
- * @Last Modified time: 2016-05-24 13:30:19
+ * @Last Modified time: 2016-06-10 00:16:14
  */
 
 window.onload = function() {
@@ -26,7 +26,7 @@ window.onload = function() {
   var tunbac = document.getElementById('tunbac');
 
   function goCommand() {
-    // current=(current+90)%360;
+    // current              =(current+90)%360;
     //根据方块的方向确定行进的方向
     switch (directionCount[0]) {
       case 0:
@@ -60,8 +60,8 @@ window.onload = function() {
     if (countLeft >= 400) {
       countLeft = 400;
     }
-    // this.style.transform='rotate('+current+'deg)';
-    // directionCount[0]=current;
+    // this.style.transform ='rotate('+current+'deg)';
+    // directionCount[0]    =current;
     // console.log(directionCount[0]);
     //变换
     square.style.top = countTop + 'px';
